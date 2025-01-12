@@ -101,6 +101,66 @@ header nav ul li a:hover {
   margin-bottom: 20px;
   text-align: center;
 }
+.certificates-awards-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.certificates-awards-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.certificate, .award {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate:hover, .award:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate img {
+  max-width: 350px;
+  height: 400px;
+  margin: 0 auto 15px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.certificate h4, .award h4 {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.certificate p, .award p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.certificate strong, .award strong {
+  color: #333;
+  font-weight: bold;
+}
 
 .home-section .profile-pic img {
   width: 300px; /* Adjust size as needed */
@@ -124,14 +184,14 @@ header nav ul li a:hover {
   line-height: 1.8;
 }
 
-.degree-grid, .experience-grid {
+.degree-grid, .experience-grid, .certificates-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.degree , .experience{
+.degree , .experience,.certificate{
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
